@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enhanced Form</title>
+
+</head>
+<body>
+
+<header>
+    <h1>Enhanced HTML5 Form Assignment</h1>
+    <p>Example of lists, tables, media, and a complete HTML5 form</p>
+</header>
+
+<nav>
+    <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#media">Media</a></li>
+        <li><a href="#form">Form</a></li>
+    </ul>
+</nav>
+
+<main>
+
+<section id="about">
+    <h2>About This Page</h2>
+    <p>This is a demonstration of HTML5 features, semantic elements, lists, tables, media, and form validation.</p>
+
+    <h3>Unordered List</h3>
+    <ul>
+        <li>Monday</li>
+        <li>Tuesday</li>
+        <li>Wednesday</li>
+    </ul>
+
+    <h3>Ordered List</h3>
+    <ol>
+        <li>Thursday</li>
+        <li>Friday</li>
+        <li>Saturday</li>
+    </ol>
+
+    <h2>Table:Event Schedule</h2>
+    <table border="1">
+        <thead>
+            <tr>
+                <th>Time</th>
+                <th>Activity</th>
+                <th>Speaker</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>09:00 AM</td>
+                <td>Registration</td>
+                <td>Members</td>
+            </tr>
+            <tr>
+                <td>10:00 AM</td>
+                <td>Keynote Speech</td>
+                <td>Jane Wangari</td>
+            </tr>
+            <tr>
+                <td>11:00 AM</td>
+                <td>Workshop</td>
+                <td>Robert Zane</td>
+            </tr>
+        </tbody>
+    </table>
+</section>
+
+<section id="media">
+    <h2>Embedding Media Examples</h2>
+    <img src="c:\Users\user\Downloads\Tea plantation.jpg" alt="Tea Plantation" style="width:500px;height:300px;">
+
+    <video width="500" height="300" controls>
+        <source src="c:\Users\user\Downloads\mov_bbb.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+
+    <audio controls>
+        <source src="c:\Users\user\Downloads\testaudioenglish.mp3" type="audio/mpeg">
+        Your browser does not support audio playback.
+    </audio>
+</section>
+
+<section id="form">
+    <h2>Registration Form</h2>
+    <form action="#" method="post" autocomplete="on">
+        <label for="fullname">Full Name:</label>
+        <input type="text" id="fullname" name="fullname" placeholder="Enter your full name" required>
+        <br /><br />
+        <label for="email">Email Address:</label>
+        <input type="email" id="email" name="email" placeholder="example@email.com" required>
+        <br /><br />
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" placeholder="Create a password" required minlength="6">
+        <br /><br />
+        <label for="dob">Date of Birth:</label>
+        <input type="date" id="dob" name="dob" required>
+        <br /><br />
+        <label for="gender">Gender:</label><br />
+        <input type="radio" name="gender" value="Male">Male
+        <input type="radio" name="gender" value="Female">Female
+        <br /><br />
+        <label for="age">Age:</label>
+        <input type="number" id="age" name="age" min="18" max="35" required>
+        <br /><br />
+        <label for="country">Country:</label>
+        <select id="country" name="country" required>
+            <option value="">Select your country</option>
+            <option value="Kenya">Kenya</option>
+            <option value="USA">USA</option>
+            <option value="UK">UK</option>
+        </select>
+        <br /><br />
+        <label for="resume">Upload Resume:</label>
+        <input type="file" id="resume" name="resume" accept=".pdf,.doc,.docx">
+        <br /><br />
+        <label for="readonly">Referral Code:</label>
+        <input type="text" id="readonly" name="readonly" value="WELCOME2025" readonly>
+        <br /><br />
+        <label for="message">Your Message:</label>
+        <textarea id="message" name="message" placeholder="Write something here..." rows="4"></textarea>
+        <br /><br />
+        <label>
+            <input type="checkbox" name="terms" required> I agree to the terms and conditions
+        </label>
+        <br /><br />
+        <button type="submit">Submit</button>
+    </form>
+</section>
+
+</main>
+
+<footer>
+    <p>&copy; 2025 Enhanced Form Assignment | Designed by Mercy Chebet</p>
+</footer>
+
+</body>
+</html>
